@@ -1,4 +1,4 @@
-# Node.js-Hello-World-Microservice-Example# %CUSTOM_PLUGIN_SERVICE_NAME%
+# %CUSTOM_PLUGIN_SERVICE_NAME%
 
 [![pipeline status][pipeline]][git-link]
 [![coverage report][coverage]][git-link]
