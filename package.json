@@ -26,7 +26,7 @@
     "@mia-platform/custom-plugin-lib": "^1.0.5"
   },
   "devDependencies": {
-    "@mia-platform/eslint-config-mia": "^2.0.1",
+    "@mia-platform/eslint-config-mia": "^3.0.0",
     "eslint": "^6.7.2",
     "pre-commit": "^1.2.2",
     "tap": "^14.9.2"
