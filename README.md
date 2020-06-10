@@ -1,56 +1,29 @@
-# mia_template_service_name_placeholder
+## Node.js Hello-World Example walkthrough
+This walkthrough will explain you how to correctly generate a microservice that returns an hello message from the DevOps Console. 
 
-[![pipeline status][pipeline]][git-link]
-[![coverage report][coverage]][git-link]
+In order to do so, access to [Mia-Platform DevOps Console](https://console.cloud.mia-platform.eu/login), create a new project and go to the **Design** area. <br /> From the Design area of your project select "Microservices" on the menu on the left sidebar and then create a new microservice, you have now reached [Mia-Platform Marketplace](https://docs.mia-platform.eu/development_suite/api-console/api-design/marketplace/)! <br />
+In the marketplace you will see a set of Examples and Templates that can be used to set-up microservices with a predefined and tested function. 
 
-## Summary
+For this walkthrough select the following template: **Node.js HelloWorld Microservice Example**.
+Give to your microservice the following Name: **hello-example**. Then, fill the other required fields and confirm that you want to create a microservice.
 
-%CUSTOM_PLUGIN_SERVICE_DESCRIPTION%
+In order to access to our new microservice it is necessary to create an endpoint to it.<br />
+In particular, in this walkthrough we will create an endpoint to our microservice *hello-example*. To do so, from the Design area of your project select "Endpoints" on the menu on the left sidebar and then create a new endpoint.<br />
+Now we need to choose a path for our endpoint and to connect this endpoint to our microservice. Give to your endpoint the following path: **salutation**. Then, specify that you want to connect your endpoint to a microservice and, finally, select *hello-example*.
 
-## Local Development
+After having created an endpoint to your microservice you should save the changes that you have done to your project in the DevOps console, in a similar way to what we have previously done after the microservice creation.
 
-To develop the service locally you need:
-- Node 10+
+Once all the changes that we have made are saved, we are now able to deploy our project through the API Console. Go to the **Deploy** area of the DevOps Console.<br />
+Once here select the environment and the branch you have worked on. When the deploy process is finished you will receveive a pop-up message that will inform you.
 
-To setup node, please if possible try to use [nvm][nvm], so you can manage
-multiple versions easily. Once you have installed nvm, you can go inside
-the directory of the project and simply run `nvm install`, the `.nvmrc` file
-will install and select the correct version if you don’t already have it.
+Now, if you launch the following command on your terminal:
 
-Once you have all the dependency in place, you can launch:
-```shell
-npm ci
-npm run coverage
-```
+`curl <YOUR_PROJECT_HOST>/salutation/hello`
 
-This two commands, will install the dependencies and run the tests with
-the coverage report that you can view as an HTML page in
-`coverage/lcov-report/index.html`.  
-After running the coverage you can create your local copy of the default values
-for the `env` variables needed for launching the application.
-```shell
-cp ./default.env ./local.env
-```
+(remember to replace `<YOUR_PROJECT_HOST>` with the real host of your project)<br />
+you should see the following message: 
 
-From now on, if you want to change anyone of the default values for
-the variables you can do it inside the `local.env` file without
-pushing it to the remote repository.
+`{"message":"Hello World"}`
 
-Once you have all your dependency in place you can launch:
-```shell
-npm run start:local
-```
+Congratulations! You have successfully learnt how to use our Node.js Hello-World Example on the DevOps Console!
 
-After that you will have the service exposed on your machine.
-
-## Notes
-
-The first project build will fail because the `package-lock.json`
-file is missing.
-
-[pipeline]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/badges/master/pipeline.svg
-[coverage]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/badges/master/coverage.svg
-[git-link]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/commits/master
-
-[nvm]: https://github.com/creationix/nvm
-[merge-request]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/merge_requests
