@@ -11,7 +11,7 @@ In order to access to our new microservice it is necessary to create an endpoint
 In particular, in this walkthrough we will create an endpoint to our microservice *hello-example*. To do so, from the Design area of your project select "Endpoints" on the menu on the left sidebar and then create a new endpoint.<br />
 Now we need to choose a path for our endpoint and to connect this endpoint to our microservice. Give to your endpoint the following path: **salutation**. Then, specify that you want to connect your endpoint to a microservice and, finally, select *hello-example*.
 
-After having created an endpoint to your microservice you should save the changes that you have done to your project in the DevOps console, in a similar way to what we have previously done after the microservice creation.
+After having created an endpoint to your microservice you should save the changes that you have done to your project in the DevOps console.<br />Remember to choose a meaningful title for your commit (e.g "example_hello_creation"). After some seconds you will be prompted with a popup message which confirms that you have successfully saved all your changes.
 
 Once all the changes that we have made are saved, we are now able to deploy our project through the API Console. Go to the **Deploy** area of the DevOps Console.<br />
 Once here select the environment and the branch you have worked on. When the deploy process is finished you will receveive a pop-up message that will inform you.
