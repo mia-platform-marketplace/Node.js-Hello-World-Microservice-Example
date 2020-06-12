@@ -10,6 +10,7 @@
 ## Local Development
 
 To develop the service locally you need:
+
 - Node 10+
 
 To setup node, please if possible try to use [nvm][nvm], so you can manage
@@ -18,6 +19,7 @@ the directory of the project and simply run `nvm install`, the `.nvmrc` file
 will install and select the correct version if you don’t already have it.
 
 Once you have all the dependency in place, you can launch:
+
 ```shell
 npm ci
 npm run coverage
@@ -28,6 +30,7 @@ the coverage report that you can view as an HTML page in
 `coverage/lcov-report/index.html`.  
 After running the coverage you can create your local copy of the default values
 for the `env` variables needed for launching the application.
+
 ```shell
 cp ./default.env ./local.env
 ```
@@ -37,16 +40,23 @@ the variables you can do it inside the `local.env` file without
 pushing it to the remote repository.
 
 Once you have all your dependency in place you can launch:
+
 ```shell
-npm run start:local
+set -a && source local.env
+npm start
 ```
 
-After that you will have the service exposed on your machine.
+After that you will have the service exposed on your machine. In order to verify that the service is working properly you could launch in another terminal shell:
 
-## Notes
+```shell
+curl http://localhost:3000/-/ready
+```
 
-The first project build will fail because the `package-lock.json`
-file is missing.
+As a result the terminal should return you the following message:
+
+```json
+{"name":"mia_template_service_name_placeholder","status":"OK","version":"0.1.0"}
+```
 
 [pipeline]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/badges/master/pipeline.svg
 [coverage]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/badges/master/coverage.svg
