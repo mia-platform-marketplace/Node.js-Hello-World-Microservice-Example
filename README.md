@@ -13,7 +13,7 @@ A more detailed description on how to create a Microservice can be found in [Mic
 
 In order to access to our new microservice it is necessary to create an endpoint to it.  
 In particular, in this walkthrough we will create an endpoint to our microservice *hello-example*. To do so, from the Design area of your project select "Endpoints" on the menu on the left sidebar and then create a new endpoint.  
-Now we need to choose a path for our endpoint and to connect this endpoint to our microservice. Give to your endpoint the following path: **salutation**. Then, specify that you want to connect your endpoint to a microservice and, finally, select *hello-example*.  
+Now we need to choose a path for our endpoint and to connect this endpoint to our microservice. Give to your endpoint the following path: **/salutation**. Then, specify that you want to connect your endpoint to a microservice and, finally, select *hello-example*.  
 Step 3 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/#3-creating-the-endpoint) section of Mia-Platform documentation will explain in detail how to create an endpoint from the DevOps Console.
 
 After having created an endpoint to your microservice you should save the changes that you have done to your project in the DevOps console.  
