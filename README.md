@@ -7,7 +7,7 @@ In order to do so, access to [Mia-Platform DevOps Console](https://console.cloud
 From the Design area of your project select "Microservices" on the menu on the left sidebar and then create a new microservice, you have now reached [Mia-Platform Marketplace](https://docs.mia-platform.eu/development_suite/api-console/api-design/marketplace/)!  
 In the marketplace you will see a set of Examples and Templates that can be used to set-up microservices with a predefined and tested function.  
 
-For this walkthrough select the following template: **Node.js HelloWorld Microservice Example**.
+For this walkthrough select the following example: **Node.js HelloWorld Microservice Example**.
 Give to your microservice the following Name: **hello-example**. Then, fill the other required fields and confirm that you want to create a microservice.  
 A more detailed description on how to create a Microservice can be found in [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/#2-service-creation) section of Mia-Platform documentation.
 
