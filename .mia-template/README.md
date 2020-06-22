@@ -1,8 +1,5 @@
 # mia_template_service_name_placeholder
 
-[![pipeline status][pipeline]][git-link]
-[![coverage report][coverage]][git-link]
-
 ## Summary
 
 %CUSTOM_PLUGIN_SERVICE_DESCRIPTION%
@@ -57,10 +54,6 @@ As a result the terminal should return you the following message:
 ```json
 {"name":"mia_template_service_name_placeholder","status":"OK","version":"0.1.0"}
 ```
-
-[pipeline]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/badges/master/pipeline.svg
-[coverage]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/badges/master/coverage.svg
-[git-link]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/commits/master
 
 [nvm]: https://github.com/creationix/nvm
 [merge-request]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/merge_requests
