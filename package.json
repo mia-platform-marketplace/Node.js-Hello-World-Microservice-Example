@@ -10,7 +10,7 @@
     "postcoverage": "tap --coverage-report=lcov --no-browser",
     "lint": "eslint . --ignore-path=.gitignore",
     "start": "lc39 index.js",
-    "start:local": "npm start -- --env-path ./local.env",
+    "start:local": "npm start -- --env-path ./default.env",
     "test": "npm run lint && npm run unit && npm run checkonly",
     "unit": "tap -o tap.log tests/*.test.js",
     "update-version": "./scripts/update-version.sh ${npm_package_version} && git add CHANGELOG.md Dockerfile",
