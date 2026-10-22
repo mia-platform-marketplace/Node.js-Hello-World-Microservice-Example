@@ -8,7 +8,7 @@
     "checkonly": "! grep -R '\\.only' tests/",
     "coverage": "npm run unit -- --coverage-report=text-summary",
     "postcoverage": "tap --coverage-report=lcov --no-browser",
-    "lint": "eslint . --ignore-path=.gitignore",
+    "lint": "eslint .",
     "start": "lc39 index.js",
     "start:local": "npm start -- --env-path ./local.env",
     "test": "npm run lint && npm run unit && npm run checkonly",
@@ -17,19 +17,16 @@
     "version": "npm run update-version"
   },
   "dependencies": {
-    "@mia-platform/custom-plugin-lib": "^5.0.0"
+    "@mia-platform/custom-plugin-lib": "^8.0.0"
   },
   "devDependencies": {
-    "@mia-platform/eslint-config-mia": "^3.0.0",
-    "eslint": "^8.17.0",
-    "pre-commit": "^1.2.2",
-    "tap": "^16.2.0"
+    "@mia-platform/eslint-config-mia": "^10.0.0",
+    "eslint": "^10.13.0",
+    "pre-commit": "^2.0.0",
+    "tap": "^21.8.0"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=24"
   },
-  "private": true,
-  "eslintConfig": {
-    "extends": "@mia-platform/eslint-config-mia"
-  }
+  "private": true
 }
